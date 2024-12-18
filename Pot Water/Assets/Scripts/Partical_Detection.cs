@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Partical_Detection : MonoBehaviour
 {
@@ -16,17 +17,22 @@ public class Partical_Detection : MonoBehaviour
     void Update()
     {
         timer++;
-        if ((timer % 200) == 0){
+        if ((timer % 215) == 0){
             _fireparticleSystem.Stop(); 
             _smokeParticleSystem.Play();
             
             
         }
-        if((timer % 600) == 0){
+        if((timer % 650) == 0){
+            timer = -15;
             _fireparticleSystem.Play();
              _smokeParticleSystem.Stop();
              _waterParticleSystem.Clear();
-             _waterParticleSystem.Play();
+            timer = 0;
+           // Debug.Log("poopyss");
+            _waterParticleSystem.Play();
+            
+            SceneManager.LoadScene("Menu");
 
         }
     }
