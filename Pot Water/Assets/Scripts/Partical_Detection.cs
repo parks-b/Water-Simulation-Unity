@@ -32,8 +32,13 @@ public class Partical_Detection : MonoBehaviour
            // Debug.Log("poopyss");
             _waterParticleSystem.Play();
             
-            SceneManager.LoadScene("Menu");
+            //SceneManager.LoadScene("Menu");
+            //this is blaines fautl hi
 
+        }
+        if((timer % 730) == 0)
+        {
+            SceneManager.LoadScene("Menu");
         }
     }
 

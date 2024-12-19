@@ -596,6 +596,14 @@ PrefabInstance:
       propertyPath: CollisionModule.enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3741733777943620447, guid: 412c66dad3e97394e99143794687f2c2, type: 3}
+      propertyPath: CollisionModule.maxKillSpeed
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 3741733777943620447, guid: 412c66dad3e97394e99143794687f2c2, type: 3}
+      propertyPath: CollisionModule.collisionMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6697395784310209099, guid: 412c66dad3e97394e99143794687f2c2, type: 3}
       propertyPath: m_Name
       value: SmokeEffect
